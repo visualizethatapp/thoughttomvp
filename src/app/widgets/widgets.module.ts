@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BannerComponent } from './banner/banner.component';
+import { BannerComponent } from './banner/banner.component'
 import { NavigationComponent } from './navigation/navigation.component';
 
 
@@ -10,7 +10,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     NavigationComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
     BannerComponent,
