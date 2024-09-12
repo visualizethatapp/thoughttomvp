@@ -1,0 +1,145 @@
+.pricing {
+    background-color: black;
+    background-image: url("/assets/images/web-image1.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 20vh;
+    background-position-x: right;
+    padding: 3em 0 9em;
+
+    @media (min-width: 1024px) {
+     background-size: 35vh;
+    }
+
+    @media(min-width: 1280px) {
+        background-size: 50vh;
+    }
+
+  .heading {
+    font-size: 1em;
+    color: white;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1em 1.5em;
+    font-size: 1.7em;
+
+    @media(min-width: 1280px) {
+        padding: 1em 3em;
+    }
+  }
+
+  .subheading {
+    font-size: 1.2em;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding: 0 2em;
+    line-height: 1.7;
+
+    @media(min-width: 1280px) {
+        padding: 0 4em;
+    }
+
+    p {
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      color: yellow;
+    }
+  }
+
+  .pricing-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1.5em;
+
+    @media(min-width: 1280px) {
+      flex-direction: row;
+      padding: 2em 4em;
+    }
+
+    .price-card {
+      background: white;
+      border-radius: 0.3em;
+      margin: 1em;
+        padding: 1em;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); //fix box shadow
+      width: 70vw;
+
+      @media(min-width: 768px) {
+        width: 80vw;
+      }
+
+      @media(min-width: 1280px) {
+        width: 30vw;
+      }
+
+      header {
+        font-family: "Lilita One", sans-serif;
+        font-size: 1.3em;
+        font-weight: 400;
+        font-style: normal;
+        padding: 1em 0;
+      }
+
+      .price {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.5em;
+        background-color: yellow;
+        background-size: contain;
+      }
+
+      p {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+      }
+    }
+  }
+
+  .other-services {
+    color: white;
+
+    .highlightback {
+        font-family: "Outfit", sans-serif;
+        background-color: yellow;
+        color: black;
+        font-weight: 600;
+    }
+
+    .service {
+        padding: 2.5em;
+        line-height: 2.2;
+
+        @media(min-width: 1280px) {
+            padding: 2em 5em;
+        }
+
+        header {
+            font-family: "Lilita One", sans-serif;
+            font-size: 1.3em;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .rate {
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            padding: 0.5em 0;
+        }
+
+        .example {
+            color: white;
+        }
+    }
+  }
+}

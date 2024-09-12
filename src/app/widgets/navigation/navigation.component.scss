@@ -1,0 +1,70 @@
+.navigation {
+    
+    cursor: pointer;
+
+    .desktopMenu {
+       display: none;
+
+        @media(min-width: 1025px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: 3em 8em 1em;
+            align-self: center;
+
+            .branding {
+                display: flex;
+                flex-direction: row;
+
+                p {
+                    color: white;
+                    padding: 1em 0;
+                    font-family: "Signika Negative", sans-serif;
+                    font-weight: 600;
+                }
+            }
+
+            .nav-logo img {
+                width: 8vh;
+                justify-content: space-around;
+            }
+    
+            .nav-items {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-content: center;
+            color: black;
+            font-family: "Signika Negative", sans-serif;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+
+        .nav-items a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-items a:hover {
+            color: yellow;
+        }
+
+        
+    }
+
+    }
+
+    .mobile-menu {
+        position: absolute;
+        z-index: 7;
+        display: flex;
+        flex-direction: row;
+        
+        @media(min-width: 1025px) {
+            display: none;
+        }
+
+    }
+}

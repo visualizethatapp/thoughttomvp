@@ -1,0 +1,139 @@
+.banner {
+    // background: url(/assets/images/e-commerce-3692440_1920.jpg);
+    // background-color: rgba(255, 190, 117);
+    // background-color: #eeb462;
+    // background: linear-gradient(
+    //     180deg,
+    //     rgba(141, 126, 255) -28.35%,
+    //     rgba(149, 122, 255, 0)
+    //   );
+    // background-color: black;
+    color: white;
+    height: 55vh;
+
+    @media(min-width:768px) {
+        height: 66vh;
+    }
+
+    @media(min-width: 2560px) {
+        height: 95vh;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 3em 2em;
+
+        @media(min-width: 768px) {}
+
+        @media(min-width: 1024px) {
+            padding: 3em;
+        }
+
+        @media(min-width: 1280px) {
+            flex-direction: row;
+        }
+
+
+        .copy {
+
+            @media(min-width: 1280px) {
+                padding: 3em 3em 6em;
+            }
+
+            @media(min-width: 2560px) {
+                padding: 9em 4em;
+            }
+
+            .heading {
+                font-size: 2em;
+                font-family: "Lilita One", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+
+                @media(min-width: 1024px) {
+                    font-size: 3em;
+                }
+
+                @media(min-width: 2560px) {
+                    font-size: 5.5em;
+                }
+
+                .highlight {
+                    color: yellow;
+                }
+                
+            }
+
+            p {
+                font-size: 1em;
+                line-height: 1.5;
+                font-family: "Outfit", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 300;
+                font-style: normal;
+
+                @media(min-width: 1024px) {
+                    font-size: 1em;
+                }
+
+                @media(min-width: 1280px) {
+                    font-size: 1.2em;
+                }
+
+                @media(min-width: 2560px) {
+                    font-size: 2.2em;
+                }
+
+                .highlight {
+                    color: yellow;
+                }
+            }
+
+            button {
+                margin: 0.5em 0;
+                border-radius: 2em;
+                width: 9em;
+                height: 3em;
+                font-size: 13px;
+                font-weight: 500;
+                font-family: "Outfit", sans-serif;
+                font-optical-sizing: auto;
+                border: solid 1px yellow;
+                color: white;
+                background: black;
+            }
+
+        }
+
+        .image img {
+            height: 18vh;
+            margin: 4em 0;
+
+            @media(min-width: 768px) {
+                height: 33vh;
+                margin: 2em 0 4em;
+                animation: float 7s linear infinite;
+            }
+
+            @keyframes float {
+                0%, 100% {
+                    transform: translateY(0rem);
+                }
+                50% {
+                    transform: translateY(-3.5rem);
+                }
+            }
+
+            @media(min-width: 1280px) {
+                height: 50vh;
+            }
+
+            @media(min-width: 2560px) {
+                height: 80vh;
+            }
+        }
+    }
+
+}

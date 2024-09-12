@@ -1,0 +1,85 @@
+.footer {
+    background: black;
+
+    .line {
+        color: yellow;
+    }
+    color: white;
+    padding: 3em 4em;
+
+    &__content {
+        padding: 3em 0 2em;
+        .heading {
+            font-family: "Lilita One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+.contact-details {
+
+    .fa-whatsapp {
+        color: #075E54;
+        font-size: 22px;
+      }
+
+      p {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+      }
+}
+
+    .social-media{
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+
+        .fa {
+          padding: 8px;
+          font-size: 10px;
+          width: 14px;
+          font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+          }
+          
+          .fa:hover {
+              opacity: 0.7;
+          }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+          }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+          }
+          .fa-linkedin {
+            background: #007bb5;
+            color: white;
+          }
+          .fa-dribbble {
+            background: #ea4c89;
+            color: white;
+          }
+
+
+    }
+
+    .contact-details {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .copyright {
+        padding: 4em 0;
+    }
+}

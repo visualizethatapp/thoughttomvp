@@ -1,0 +1,15 @@
+.showcase {
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2em 6em;
+
+        .card {
+            img {
+                height: 50vh;
+            }
+        }
+    }
+
+}

@@ -1,1 +1,31 @@
-<p>navigation works!</p>
+<section class="navigation">
+    <div class="desktop-menu" [ngClass]="{'desktopMenu': true, 'mobileMenu': false}">
+        <div class="branding">
+        <!-- 
+            <div class="nav-logo"><img src="assets/images/thoughttomvp_logo1.png" alt="logo"></div> -->
+        <p>Thought to MVP Design Studio</p>
+    </div>
+    <div class="nav-logo"><img src="assets/images/thoughttomvp_logo1.png" alt="logo"></div>
+        <nav class="nav-items">
+            <a routerLink="/">Home</a>
+            <!-- <a class="button" routerLink="/crisis-list" routerLinkActive="activebutton" ariaCurrentWhenActive="page"></a> -->
+            <a class="button" routerLink="pricing" routerLinkActive="activebutton"></a>
+            <!-- <a routerLink="/process">Process</a> -->
+            <a routerLink="/team">Team</a>
+            <a routerLink="/pricing">Pricing</a>
+            <a routerLink="/contact">Contact</a>
+        </nav>
+    </div>
+    <div class="mobile-menu" [ngClass]="{'desktopMenu': false, 'mobileMenu': true}">
+        <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Home</button>
+          <button mat-menu-item>Process</button>
+          <button mat-menu-item>Team</button>
+          <button mat-menu-item>Pricing</button>
+          <button mat-menu-item>Contact</button>
+        </mat-menu>
+
+    </div>
+    
+</section>

@@ -1,0 +1,81 @@
+// rgba(176,187,193) 123,123,123
+
+.process {
+  background: black;
+    margin: 1em;
+    .highlight {
+        color: yellow;
+    }
+
+    &__content {
+        .heading {
+            color: white;
+            font-family: "Lilita One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            padding: 1em;
+            font-size: 1.7em;
+
+            @media(min-width: 1024px) {
+                padding: 1em 3em;
+            }
+        }
+
+        .subheading {
+            color: white;
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            padding: 0 2em;
+
+            @media(min-width: 1024px) {
+                padding: 0 5em;
+            }
+        }
+        
+        .cards {
+            display: flex;
+            flex-direction: column;
+            padding: 1em 0;
+
+            @media(min-width: 1024px) {
+                flex-direction: row;
+                padding: 1em 4em;
+            }
+
+            .card {
+        background: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19); //fix box shadow
+          width: 70vw;
+          border-radius: 0.3em;
+          margin: 1em;
+          padding: 1em;
+
+          @media(min-width: 768px) {
+            width: 85vw;
+          }
+
+          @media(min-width: 1024px ) {
+            width: 20vw;
+          }
+
+          h3 {
+            font-family: "Lilita One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+
+          p {
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+          }
+
+            }
+        }
+    }
+
+}
